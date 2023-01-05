@@ -1,24 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;1400&display=swap" rel="stylesheet">
   <title>Capstone Project 2</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li id="sports" class="nav-items">Sports</li>
-        <li id="leagues" class="nav-items">Leagues</li>
-        <li id="players" class="nav-items">Great Players</li>
+  <div class="header">
+    <div class="redband"></div>
+    <div class="main-header">
+      <ul class="header-ul">
+        <li class="header-li"><a class="header-li-item" href="#" id="logo"><img class="logo-header"
+              src="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png" alt="logo"></a></li>
+        <li class="header-li"><a class="header-li-item" href="#" id="sports">Sports</a></li>
+        <li class="header-li"><a class="header-li-item" href="#" id="players">Best Players of all time</a>
+        </li>
+        <li class="header-li"><a class="header-li-item" href="#" id="leagues">Leagues</a></li>
       </ul>
-    </nav>
-  </header>
-  <section class="main-container">
-    <div class="cards">
     </div>
-  </section>
+  </div>
+  <div class="content">
+    <!-- Sports -->
+    <div class="articles-container">
+      <article class="myarticle">
+        <img src="" class="article-img" alt="Image cover">
+        <div class="article-content">
+          <h2 class="article-title">Sport Title</h2>
+          <h3 class="article-sub-title">Subtitle or Small content overview</h3>
+          <div class="sub-article">
+            <button class="action-btn">Like (10) &#128077</button>
+            <button class="action-btn">Comment (45) &#128488</button>
+            <button class="action-btn">View &#128065</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- best players container -->
+    <div class="players-container">
+      <article class="myarticle">
+        <img src="" class="article-img" alt="Image cover">
+        <div class="article-content">
+          <h2 class="article-title">Player name</h2>
+          <h3 class="article-sub-title">Content Overview</h3>
+          <div class="sub-article">
+            <button class="action-btn">Like (10) &#128077</button>
+            <button class="action-btn">Comment (45) &#128488</button>
+            <button class="action-btn">View &#128065</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- leagues container -->
+    <div class="league-container">
+      <article class="myarticle">
+        <img src="" class="article-img" alt="Image cover">
+        <div class="article-content">
+          <h2 class="article-title">League name</h2>
+          <h3 class="article-sub-title">content overview</h3>
+          <div class="sub-article">
+            <button class="action-btn">Like (10) &#128077</button>
+            <button class="action-btn">Comment (45) &#128488</button>
+            <button class="action-btn">View &#128065</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- modal  -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="card-preview-header">
+          <h2 class="work-title-preview">League name</h2>
+          <span class="close">&times;</span>
+        </div>
+
+        <img src="" class="article-img" alt="Image cover">
+        <div class="article-content">
+          <h3 class="article-sub-title">content overview</h3>
+          <div class="comments-container">
+            <h2>Comments (45)</h2>
+            <!-- comments -->
+            <h3>Comment 1 : "Welcome dear"</h3>
+            <!-- <h3>Comment 1 : "Welcome dear"</h3>
+            <h3>Comment 1 : "Welcome dear"</h3> -->
+
+            <form action="" id="add-comment">
+              <h2>Add Comment</h2>
+              <label for="">Your name</label>
+              <div>
+                <input type="text" name="name" required>
+              </div>
+              <label for="">Your insights</label>
+              <div>
+                <textarea name="insights" id="" cols="30" rows="10"></textarea>
+              </div>
+              <input type="submit" name="comment" id="comment-btn" title="Comment">
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="left">
+      <p>Created by Microverse under CC License ; <br> this project has been set up in pair programming by Israel
+        CHIZUNGU and Prangon Ghose.
+        A complete page interacting with the football data API to fetch data, open details in popup window and perform
+        likes and comment actions...
+      </p>
+    </div>
+    <div class="righ">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png" class="logo-footer"
+        alt="Logo">
+      <p class="mit-license-paragraph">MIT License</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./index.js"></script>
 </body>
+
 </html>
