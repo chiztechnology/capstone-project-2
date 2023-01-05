@@ -133,8 +133,26 @@ footer {
   margin-top: 0;
 }
 
+.comments-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment-list {
+  height: 240px;
+  width: fit-content;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.article-img-preview {
+  width: 250px;
+  height: auto;
+}
+
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
   justify-content: center;
@@ -158,6 +176,8 @@ footer {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0 10px 10px 0;
   /* align-items: center;
   justify-content: center; */
 }
