@@ -2,9 +2,11 @@ import getData from './getData.js';
 import generateCards from './generateCards.js';
 
 const url = 'https://www.thesportsdb.com/api/v1/json/2/all_sports.php';
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('.sport-container');
 cards.innerHTML = '';
 let displayData = [];
+let loading = document.createTextNode('Loading ...');
+cards.append(loading);
 
 export const sports = async () => {
   const allSports = await getData(url);
@@ -17,4 +19,5 @@ export const sports = async () => {
     cards.innerHTML = (displayData).join(' ');
     displayData = [];
   }
+  loading.remove();
 };

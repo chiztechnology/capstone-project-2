@@ -2,9 +2,12 @@ import getData from './getData.js';
 import generateCards from './generateCards.js';
 
 const countries = ['England', 'Spain', 'France', 'Germany'];
-const cards = document.querySelector('.cards');
+const cards = document.querySelector('.league-container');
 cards.innerHTML = '';
 let displayData = [];
+
+let loading = document.createTextNode('Loading ...');
+cards.append(loading);
 
 export const getLeagues = async () => {
   for (let i = 0; i < countries.length; i += 1) {
@@ -22,4 +25,5 @@ export const getLeagues = async () => {
   }
   cards.innerHTML = (displayData).join(' ');
   displayData = [];
+  loading.remove();
 };

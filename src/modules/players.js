@@ -1,12 +1,15 @@
 import getData from './getData.js';
 import generateCards from './generateCards.js';
 
-const players = ['Lionel Messi', 'Cristiano Ronaldo', 
-'Michael Jordan', 'LeBron James', 'Kareem Abdul-Jabbar', 
-'Michael Phelps', 'Andres Iniesta', 'Dani Alves', 'Tom Brady'];
-const cards = document.querySelector('.cards');
+const players = ['Lionel Messi', 'Cristiano Ronaldo',
+  'Michael Jordan', 'LeBron James', 'Kareem Abdul-Jabbar',
+  'Michael Phelps', 'Andres Iniesta', 'Dani Alves', 'Tom Brady'];
+const cards = document.querySelector('.players-container');
 cards.innerHTML = '';
 let displayData = [];
+
+let loading = document.createTextNode('Loading ...');
+cards.append(loading);
 
 export const getPlayer = async () => {
   for (let i = 0; i < players.length; i += 1) {
@@ -20,4 +23,6 @@ export const getPlayer = async () => {
       displayData = [];
     }
   }
+
+  loading.remove();
 };
