@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;1400&display=swap" rel="stylesheet">
+  <title>Capstone Project 2</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="redband"></div>
+    <div class="main-header">
+      <ul class="header-ul">
+        <li class="header-li"><a class="header-li-item" href="#" id="logo"><img class="logo-header"
+              src="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png" alt="logo"></a></li>
+        <li class="header-li"><a class="header-li-item" href="#" id="sports">Sports</a></li>
+        <li class="header-li"><a class="header-li-item" href="#" id="players">Best Players of all time</a>
+        </li>
+        <li class="header-li"><a class="header-li-item" href="#" id="leagues">Leagues</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <!-- Sports -->
+    <div class="sport-container">
+      <!-- content generated dinamically -->
+    </div>
+
+    <!-- best players container -->
+    <div class="players-container">
+      <!-- content generated dinamically -->
+    </div>
+
+    <!-- leagues container -->
+    <div class="league-container">
+      <!-- content generated dynamically -->
+    </div>
+
+    <!-- modal  -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="card-preview-header">
+          <h2 class="work-title-preview">League name</h2>
+          <span class="close">&times;</span>
+        </div>
+
+        <img src="https://www.thesportsdb.com/images/sports/darts.jpg" class="article-img-preview" alt="Image cover">
+        <div class="article-content">
+          <h3 class="article-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolor officia in id culpa unde quaerat voluptatibus eum aliquam facilis molestias placeat harum, qui obcaecati corrupti rem est dolores fugiat sapiente quidem ex deleniti soluta asperiores animi. Officiis perspiciatis pariatur ducimus, quo quaerat adipisci modi, ipsum doloremque sequi numquam nobis.</h3>
+          <div class="comments-container">
+            <div class="comment-list">
+              <h2>Comments (2)</h2>
+              <!-- comments -->
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+              <h3>Comment 1 : "Welcome dear"</h3>
+            </div>
+            <form action="" id="add-comment">
+              <h2>Add Comment</h2>
+              <label for="">Your name</label>
+              <div>
+                <input type="text" name="name" required>
+              </div>
+              <label for="">Your insights</label>
+              <div>
+                <textarea name="insights" id="" cols="30" rows="10"></textarea>
+              </div>
+              <input type="submit" name="comment" id="comment-btn" title="Comment">
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="righ">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/sports-logo-png-transparent.png" class="logo-footer"
+        alt="Logo">
+      <p class="mit-license-paragraph">MIT License</p>
+    </div>
+    <div class="left">
+      <p>Created by Microverse under CC License ; <br> this project has been set up in pair programming by Israel
+        CHIZUNGU and Prangon Ghose.
+        A complete page interacting with the football data API to fetch data, open details in popup window and perform
+        likes and comment actions...
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
