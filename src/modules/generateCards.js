@@ -1,4 +1,4 @@
-export default function generateCards(img, title) {
+export default function generateCards(id, img, title, likes, noOfComments = 0) {
   const displayHTML = `
   <article class="myarticle">
   <img src=${img} class="article-img" alt="Image cover">
@@ -6,9 +6,9 @@ export default function generateCards(img, title) {
     <h2 class="article-title">${title}</h2>
     <h3 class="article-sub-title">content overview</h3>
     <div class="sub-article">
-      <button class="action-btn">Like (10) &#128077</button>
-      <button class="action-btn">Comment (45) &#128488</button>
-      <button class="action-btn">View &#128065</button>
+      <button class="action-btn like" id=${id}>Like ${likes} &#128077</button>
+      <button class="action-btn comment" id=${id}>Comment (${noOfComments}) &#128488</button>
+      <button class="action-btn view" id=${id}>View &#128065</button>
     </div>
   </div>
 </article>
